@@ -41,8 +41,8 @@
 </header>
 <main class="program-selection">
   <h2 class="program-selection__title">Подбор программы</h2>
+  <p class="program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
   <form class="program-selection__form selection-form" action="https://echo.htmlacademy.ru/" method="GET">
-    <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <fieldset class="selection-form__group">
     <label class="selection-form__label data">Имя:*
       <input class="data__input" name="name" type="text" placeholder="Барсик" required>
@@ -94,13 +94,17 @@
         <input class="data__input" type="checkbox" name="vitamins" value=""> Витамины
       </label>
     </fieldset>
-    <button class="selection-form__button button" type="submit">Отправить заявку</button>
-    <span class="selection-form__fill-fields">* — Обязательные поля</span>
+    <div class="wrapper">
+      <button class="selection-form__button button" type="submit">Отправить заявку</button>
+      <span class="selection-form__fill-fields">* — Обязательные поля</span>
+    </div>
   </form>
   <footer class="main-footer">
     <div class="main-footer__contacts contacts">
-      <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-      <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="wrapper">
+        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
       <img class="contacts__map" src="../source/img/map.jpg" alt="Карта проезда">
     </div>
     <div class="main-footer__social social">
