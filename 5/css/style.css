@@ -1,0 +1,503 @@
+.page {
+  height: 100%;
+}
+.page__body {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 20px 20px;
+  background-color: #ffffff;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.main-header__logo-text {
+  padding-top: 13px;
+}
+.main-nav__toggle {
+  border-bottom: 17px double #000000;
+  border-top: 6px solid #000000;
+  content: "";
+  height: 5px;
+  width: 1.5px;
+}
+.promo__background {
+  background: url("../img/index-background-cat.png") center no-repeat;
+  min-width: 320px;
+  min-height: 302px;
+  background-size: contain;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: relative;
+  margin-bottom: 138px;
+}
+.promo__background::after {
+  content: "";
+  background: rgba(104, 183, 56, 0.85);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0 auto;
+}
+.promo__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+  margin: 27px 0 25px;
+}
+.promo__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 2;
+}
+.promo__image {
+  position: absolute;
+  top: 232px;
+  left: 20px;
+}
+.promo__link {
+  font-size: 14px;
+  line-height: 18px;
+  width: 280px;
+  padding: 7px 44px;
+  display: block;
+  box-sizing: border-box;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #68B738;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+}
+.option {
+  margin: 0 20px;
+  padding: 0;
+}
+.choice-list {
+  padding: 0;
+}
+.choice-list__icon {
+  margin-bottom: 20px;
+  list-style-type: none;
+  background-color: #F2F2F2;
+  padding: 20px 0;
+}
+.choice-list__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 30px;
+}
+.choice-list__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
+  display: block;
+  width: 227px;
+  margin: 0 auto 40px;
+}
+.choice-list__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.advantages {
+  margin: 0 20px;
+  background-color: #ffffff;
+}
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.advantages__list {
+  padding-left: 0;
+}
+.advantages__item {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 26px;
+  padding-left: 0;
+}
+.advantages__block {
+  min-width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  margin-right: 20px;
+}
+.advantages__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.example {
+  padding: 25px 20px 45px;
+  background-color: #F2F2F2;
+}
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.example__wrapper {
+  display: flex;
+}
+.example__weight {
+  margin-right: 32px;
+}
+.example__sum {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 26px;
+  background-color: #ffffff;
+}
+.contacts-wrapper--catalog {
+  background-color: #f2f2f2;
+}
+.contacts__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  width: 139px;
+}
+.contacts__text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  width: 139px;
+}
+.social {
+  padding: 39px 20px 20px;
+}
+.social__text-logo {
+  display: block;
+  margin: 0 auto;
+}
+.catalog__wrapper {
+  margin: 0;
+  padding: 0;
+  border-top: solid 1px #d9d9d9;
+  border-bottom: solid 1px #ebebeb;
+}
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  margin: 27px 0 41px;
+}
+.catalog__list {
+  padding: 0;
+}
+.catalog__wrapper-show-more {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+}
+.catalog__show-more {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #111111;
+  margin: 23px 0 8px;
+}
+.catalog__show-more-description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #444444;
+  margin-bottom: 21px;
+}
+.catalog__button-download {
+  width: 279px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.product-card {
+  list-style: none;
+  padding: 19px 20px 25px;
+  border-bottom: solid 1px #ebebeb;
+}
+.product-card__wrapper {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.product-card__link {
+  margin-right: 36px;
+}
+.product-card__name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+.product-card__breadcrumbs-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+.product-card__order-button {
+  margin-top: 17px;
+}
+.button {
+  width: 280px;
+  background-color: #68B738;
+  border: none;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.other-products__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+  padding: 25px 20px 36px;
+  border-top: solid 1px #ebebeb;
+}
+.other-products__list {
+  margin: 0;
+  padding: 13px 20px 35px;
+}
+.additional-card {
+  list-style: none;
+  border-top: solid 1px #cdcdcd;
+  padding-bottom: 20px;
+}
+.additional-card__name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  color: #222222;
+}
+.additional-card__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.additional-card__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #444444;
+  margin-bottom: 15px;
+}
+.present {
+  background: url("../img/cat-in-bag.png") center no-repeat;
+  min-width: 320px;
+  min-height: 302px;
+  background-size: contain;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: relative;
+  margin-bottom: 35px;
+}
+.present::after {
+  content: "";
+  background: rgba(104, 183, 56, 0.85);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0 auto;
+}
+.present__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+  width: 162px;
+  margin-bottom: 43px;
+}
+.program-selection {
+  padding: 23px 20px 32px;
+}
+.program-selection__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 37px;
+}
+.program__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 39px;
+}
+.selection-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.selection-form__group {
+  display: flex;
+  flex-direction: column;
+  border: 0 none;
+}
+.selection-form__legend {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.selection-form__label {
+  margin-bottom: 7px;
+}
+.selection-form__submit-wrapper {
+  margin: 30px 0;
+}
+.data {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+  color: #222222;
+}
+.selection-form__button {
+  margin-bottom: 20px;
+}
+.selection-form__fill-fields {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+/*# sourceMappingURL=style.css.map */
