@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet"  href="css/style.css">
   <title>Кэт энерджи</title>
 </head>
 <body class="page__body">
 <header class="main-header">
+  <h1 class="visually-hidden"></h1>
   <a class="main-header__logo">
-    <img src="img/logo.svg" width="33" height="38" alt="Кэт энерджи»">
+    <img src="img/logo.svg" width="33" height="38" alt="Логотип Кэт энерджи»">
   </a>
-  <h1 class="main-header__title">
-    Cat energy
-  </h1>
-  <nav class="main-header__nav main-nav">
+  <a class="main-header__logo-text">
+    <img src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи»">
+  </a>
+  <nav class="main-header__main-nav main-nav">
     <h2 class="visually-hidden">Навигация по сайту</h2>
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <div class="main-nav__wrapper">
+    <div class="main-nav__wrapper visually-hidden">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--current">
           <a class="site-list__link" href="#">
@@ -74,9 +74,8 @@
       </label>
     </fieldset>
     <fieldset class="selection-form__group">
-      <legend class="selection-form__legend">Комментарий
+      <legend class="selection-form__legend">Комментарий</legend>
       <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-      </legend>
     </fieldset>
     <fieldset class="selection-form__group">
       <legend class="selection-form__legend">Дополнительно</legend>
@@ -93,21 +92,22 @@
         <input class="data__input" type="checkbox" name="vitamins" value=""> Витамины
       </label>
     </fieldset>
-    <div class="wrapper">
+    <div class="selection-form__submit-wrapper">
       <button class="selection-form__button button" type="submit">Отправить заявку</button>
       <span class="selection-form__fill-fields">* — Обязательные поля</span>
     </div>
   </form>
   <footer class="main-footer">
     <div class="main-footer__contacts contacts">
-      <div class="wrapper">
-        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper">
+        <h3 class="visually-hidden"> Контакты</h3>
+        <span class="contacts__title">Приглашаем к сотрудничеству дилеров!</span>
+        <span class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
       </div>
-      <img class="contacts__map" src="../source/img/map.jpg" alt="Карта проезда">
+      <img class="contacts__map" src="img/map.jpg" alt="Карта проезда">
     </div>
     <div class="main-footer__social social">
-      <h2 class="social__text-logo">Cat energy</h2>
+      <img class="social__text-logo" src="img/footer-text-logo.svg" alt="Cat energy">
       <ul class="social__list social-nets">
         <li class="social-nets__item">
           <a class="social-nets__link social-nets__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>

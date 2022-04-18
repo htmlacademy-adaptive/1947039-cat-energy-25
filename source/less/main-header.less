@@ -1,0 +1,23 @@
+@import "variables";
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: (@padding / 2) @padding @padding @padding;
+  background-color: @white-color;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header__logo-text {
+  padding-top: 13px;
+}
