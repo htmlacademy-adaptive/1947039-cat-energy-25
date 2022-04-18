@@ -4,7 +4,6 @@
 .page__body {
   display: flex;
   flex-direction: column;
-  width: 320px;
   min-height: 100%;
   margin: 0;
 }
@@ -132,7 +131,6 @@
   text-align: center;
   color: #444444;
   display: block;
-  width: 227px;
   margin: 0 auto 40px;
 }
 .choice-list__link {
