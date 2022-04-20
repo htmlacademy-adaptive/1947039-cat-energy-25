@@ -6,8 +6,21 @@
 }
 
 .choice-list {
-
   padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    margin: 0 110px;
+  }
 }
 
 .choice-list__icon {
@@ -15,6 +28,15 @@
   list-style-type: none;
   background-color: @grey-color;
   padding: @padding 0;
+
+  @media (min-width: @tablet-width) {
+    width: 710px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 374px;
+    width: 570px;
+  }
 }
 
 .choice-list__title {

@@ -3,21 +3,34 @@
 .main-header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: (@padding / 2) @padding @padding @padding;
   background-color: @white-color;
+  color: @black-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.main-header__logo {
+  width: 34px;
+  margin: 0;
 }
 
 .main-header__logo-text {
+  width: 101px;
   padding-top: 13px;
+  //
+  //@media (min-width: @tablet-width) {
+  //  display: none;
+  //}
+  //
+  //@media (min-width: @desktop-width) {
+  //  display: none;
+  //}
 }

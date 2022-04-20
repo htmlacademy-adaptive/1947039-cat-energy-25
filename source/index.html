@@ -2,6 +2,7 @@
 <html class="page" lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"  href="css/style.css">
   <title>Кэт энерджи</title>
 </head>
@@ -17,7 +18,7 @@
     <nav class="main-header__main-nav main-nav">
       <h2 class="visually-hidden">Навигация по сайту</h2>
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper visually-hidden">
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="#">
@@ -91,28 +92,35 @@
       </div>
     </section>
     <section class="example">
-      <div class="wrapper">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="example__wrapper">
-        <div class="example__weight">5 кг
-          <span class="example__definition">снижение веса</span>
+        <h2 class="example__title">Живой пример</h2>
+      <div class="example__color">
+        <div class="example__details">
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__wrapper">
+            <div class="example__weight">5 кг
+              <span class="example__definition">снижение веса</span>
+            </div>
+            <div class="example__weight">60 дней
+              <span class="example__definition">затрачено времени</span>
+            </div>
+            <div class="example__sum">
+              <span class="">Затраты на питание:</span>
+              <span>  15 000 руб.</span>
+            </div>
+          </div>
         </div>
-        <div class="example__weight">60 дней
-          <span class="example__definition">затрачено времени</span>
+        <div class="example__range-wrapper">
+          <img src="img/fat-cat.png" alt="Толстый котик.">
+          <div class="range">
+            <span class="range__min">Было</span>
+            <div class="range__scale"></div>
+            <div class="range__bar"></div>
+            <span class="range__max">Стало</span>
+          </div>
         </div>
-      </div>
-      <p class="example__sum">Затраты на питание: 15 000 руб.</p>
-      <img src="img/fat-cat.png" alt="Толстый котик.">
-      <div class="range">
-        <span class="range__min">Было</span>
-        <div class="range__scale"></div>
-        <div class="range__bar"></div>
-        <span class="range__max">Стало</span>
-      </div>
       </div>
     </section>
-    <footer class="main-footer">
+      <footer class="main-footer">
         <div class="main-footer__contacts contacts">
           <div class="contacts__wrapper">
             <h3 class="visually-hidden"> Контакты</h3>
@@ -125,18 +133,20 @@
           <img class="social__text-logo" src="img/footer-text-logo.svg" alt="Cat energy">
           <ul class="social__list social-nets">
             <li class="social-nets__item">
-              <a class="social-nets__link social-nets__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+              <a class="social-nets__link social-nets__link--vkontakte" href="https://vk.com/htmlacademy"><span class="">Вконтакте</span></a>
             </li>
             <li class="social-nets__item">
-              <a class="social-nets__link social-nets__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ютуб</span></a>
+              <a class="social-nets__link social-nets__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="">Ютуб</span></a>
             </li>
             <li class="social-nets__item">
-              <a class="social-nets__link social-nets__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
+              <a class="social-nets__link social-nets__link--telegram" href="https://t.me/htmlacademy"><span class="">Телеграм</span></a>
             </li>
           </ul>
+        <div class="wrapper">
           <b class="social__text">HTML Academy</b>
           <a class="social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden"> HTML Academy</span></a>
         </div>
+      </div>
     </footer>
   </main>
 </body>

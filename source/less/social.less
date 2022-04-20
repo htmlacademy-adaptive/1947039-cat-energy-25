@@ -1,10 +1,28 @@
 @import "variables";
 
 .social {
-  padding: 39px @padding @padding;
+  display: flex;
+  flex-direction: column;
+  padding: @padding;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .social__text-logo {
-  display: block;
-  margin: 0 auto;
+  margin: 0;
+  height: 24px;
+}
+
+.social-nets {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.social-nets__item {
+  margin-right: 30px;
 }
