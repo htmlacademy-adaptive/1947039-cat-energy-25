@@ -3,6 +3,14 @@
 .example {
   padding: (@padding+5px) @padding (@padding+25px);
   background-color: @grey-color;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .example__title {
@@ -10,6 +18,32 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: @regular-font-weight;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+  }
+}
+
+.example__color {
+  @media (min-width: @desktop-width) {
+    background-color: @grey-color;
+    height: 462px;
+    padding: 70px 0 75px 110px;
+  }
+}
+
+.example__details {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 436px;
+    min-height: 317px;
+  }
 }
 
 .example__description {
@@ -18,10 +52,16 @@
   font-size: 14px;
   line-height: 18px;
   color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .example__weight {
@@ -36,4 +76,12 @@
   color: @black-color;
   text-align: center;
   text-transform: uppercase;
+}
+
+.example__range-wrapper {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 50px;
+    right: 297px;
+  }
 }
