@@ -114,6 +114,8 @@ img {
 }
 .promo {
   min-height: 65px;
+  overflow-x: hidden;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .promo {
@@ -172,12 +174,13 @@ img {
 @media (min-width: 1200px) {
   .promo__background::after {
     color: #000000;
-    background: rgba(104, 183, 56, 0.85);
-    min-width: 720px;
+    background-color: rgba(104, 183, 56, 0.85);
+    width: 50%;
     height: 694px;
     top: 0;
-    left: 720px;
-    box-sizing: border-box;
+    left: 50%;
+    margin: 0;
+    z-index: 0;
   }
 }
 .promo__title {
