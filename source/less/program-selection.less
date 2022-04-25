@@ -2,7 +2,15 @@
 
 
 .program-selection {
-  padding: 23px @padding 32px;
+  margin: 23px @margin 32px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .program-selection__title {
@@ -13,6 +21,13 @@
   text-align: center;
   color: @black-color;
   margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 54px;
+  }
 }
 
 .program__description {
@@ -24,4 +39,10 @@
   text-transform: uppercase;
   color: @black-color;
   margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+  }
 }
