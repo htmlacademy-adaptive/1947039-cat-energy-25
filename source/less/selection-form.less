@@ -7,14 +7,40 @@
   margin: 0;
 }
 
-//fieldset {
-//  border: 0 none;
-//}
-
 .selection-form__group {
   display: flex;
   flex-direction: column;
   border: 0 none;
+}
+
+.selection-form__data-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.selection-form__group--contacts {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.fieldset-border {
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    height: 196px;
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    border: 1px solid #e7e7e7;
+  }
 }
 
 .selection-form__legend {
@@ -25,10 +51,31 @@
   text-align: left;
   color: @black-color;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .selection-form__label {
   margin-bottom: 7px;
+}
+
+.selection-form__comment {
+  border: 1px solid #e7e7e7;
+  min-width: 280px;
+  min-height: 150px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 631px;
+    min-height: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1220px;
+    min-height: 174px;
+  }
 }
 
 .selection-form__submit-wrapper {
@@ -44,8 +91,39 @@
   color: #222222;
 }
 
+.data__input {
+  border: 1px solid #e7e7e7;
+}
+
+.selection-form__additional-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 60px;
+    column-gap: 81px;
+  }
+}
+
 .selection-form__button {
   margin-bottom: @margin;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .selection-form__fill-fields {

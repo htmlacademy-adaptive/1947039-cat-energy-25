@@ -15,6 +15,14 @@
   z-index: 0;
   position: relative;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }
 
 .present::after {

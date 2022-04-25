@@ -2,6 +2,8 @@
 
 .promo {
   min-height: 65px;
+  overflow-x: hidden;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     min-height: 160px;
@@ -56,12 +58,13 @@
 
   @media (min-width: @desktop-width) {
     color: @black-color;
-    background: fade(@green-color, 85%);
-    min-width: 720px;
+    background-color: fade(@green-color, 85%);
+    width: 50%;
     height: 694px;
     top: 0;
-    left: 720px;
-    box-sizing: border-box;
+    left: 50%;
+    margin: 0;
+    z-index: 0;
   }
 }
 

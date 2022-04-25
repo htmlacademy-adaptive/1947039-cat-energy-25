@@ -9,9 +9,45 @@
   color: @black-color;
   padding: 25px @padding 36px;
   border-top: solid 1px #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.other-products__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .other-products__list {
   margin: 0;
   padding: 13px @padding 35px;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #cdcdcd;
+    margin: 0 30px;
+    min-width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 896px;
+  }
+}
+
+.additional-card__name {
+  font-family: @regular-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: @regular-font-weight;
+  text-align: left;
+  color: #222222;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
