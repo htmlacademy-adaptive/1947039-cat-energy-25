@@ -4,24 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"  href="css/style.css">
+  <link rel="icon" href="favicon.ico">
   <title>Кэт энерджи</title>
 </head>
 <body class="page__body">
 <header class="main-header">
   <h1 class="visually-hidden"></h1>
-  <a class="main-header__logo">
-    <img src="img/logo.svg" width="33" height="38" alt="Логотип Кэт энерджи»">
-  </a>
-  <a class="main-header__logo-text">
-    <img src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи»">
-  </a>
-  <nav class="main-header__main-nav main-nav">
-    <h2 class="visually-hidden">Навигация по сайту</h2>
+  <div class="main-header__logo-wrapper">
+    <a class="main-header__logo">
+      <img src="img/logo.svg" width="33" height="38" alt="Логотип Кэт энерджи»">
+    </a>
+    <a class="main-header__logo-text">
+      <img src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи»">
+    </a>
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  </div>
+  <nav class="main-header__main-nav main-nav main-nav--closed">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--current">
-          <a class="site-list__link" href="index.html">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--current" href="index.html">
             Главная
           </a>
         </li>
@@ -240,7 +243,7 @@
         <img class="contacts__map" src="img/map.jpg" alt="Карта проезда">
       </div>
       <div class="main-footer__social social">
-        <img class="social__text-logo" src="img/footer-text-logo.svg" alt="Cat energy">
+        <img class="social__text-logo" src="img/index/footer-text-logo.svg" alt="Cat energy">
         <ul class="social__list social-nets">
           <li class="social-nets__item">
             <a class="social-nets__link social-nets__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
@@ -257,5 +260,6 @@
       </div>
     </footer>
   </main>
+  <script src="js/header.js"></script>
 </body>
 </html>
