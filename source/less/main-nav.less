@@ -1,59 +1,122 @@
 @import "variables";
 
-.main-nav__toggle {
-  border-bottom: 4px double #000000;
-  border-top: 2px solid #000000;
-  content: "";
-  height: 16px;
-  width: 24px;
+.main-nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    width: 70%;
+    margin: 42px 30px 60px @margin;
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
+    width: 45%;
+    margin: 69px 110px 130px @margin;
   }
 }
 
 .site-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.site-list__item {
+  padding: 22px 10px 24px;
+  border-top: 1px solid #e6e6e6;
+  z-index: 1;
+  background-color: @white-color;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 400px;
+    padding: 0;
+    border: none;
+    width: 25%;
+    flex-grow: 1;
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 500px;
-    margin-top: 69px;
+    background-color: transparent;
   }
 }
 
 .site-list__link {
+  display: block;
   font-family: @regular-font;
   font-weight: @regular-font-weight;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
   color: @black-color;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(0, 0, 0, 80%);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 30%);
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    white-space: nowrap;
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 20px;
     line-height: 30px;
-    color: @black-color;
+    color: @white-color;
+  }
+}
+
+.site-list__link--current {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 71px;
+  }
+}
+
+.site-list__link--current::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    background-color: @green-color;
+    width: 64px;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @white-color;
+    width: 71px;
+    bottom: -8px;
   }
 }
