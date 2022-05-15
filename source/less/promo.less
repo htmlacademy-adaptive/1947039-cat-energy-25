@@ -8,6 +8,7 @@
 
   @media (min-width: @tablet-width) {
     min-height: 160px;
+    margin-bottom: 629px;
   }
 
   @media (min-width: @desktop-width) {
@@ -18,7 +19,7 @@
 
 .promo__background {
   position: relative;
-  background: url("../img/index-background-cat.png") center no-repeat;
+  background: url("../img/index/index-background-mobile-cat.jpg") center no-repeat;
   min-width: 320px;
   min-height: 302px;
   background-size: contain;
@@ -29,6 +30,10 @@
   height: 100%;
   z-index: 0;
   margin-bottom: 138px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/index-background-mobile-cat@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background: none;
@@ -75,6 +80,12 @@
     left: 50%;
     margin: 0;
     z-index: 0;
+    background-image: fade(@green-color, 85%), url("../img/index/index-background-desktop.png");
+    background-size: cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/index-background-desktop-cat@2x.jpg");
   }
 }
 
@@ -137,12 +148,15 @@
   left: 20px;
 
   @media (min-width: @tablet-width) {
-    position: static;
+    top: 341px;
+    left: 29px;
     z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
+    top: 141px;
+    left: 558px;
+    z-index: 1;
   }
 }
 
