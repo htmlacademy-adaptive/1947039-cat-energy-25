@@ -82,9 +82,21 @@
 
 .choice-list__round::after {
   position: absolute;
-  content: url("../img/sitting-cat-phone.svg");
+  content: url("../img/index/sitting-cat-phone.svg");
   left: 7px;
   top: -2px;
+
+  @media (min-width: @tablet-width) {
+    left: 20px;
+    top: -20px;
+    content: url("../img/index/sitting-cat-tablet.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 14px;
+    top: -8px;
+    content: url("../img/index/sitting-cat-desktop.svg");
+  }
 }
 
 .choice-list__round__pro::after {
@@ -92,6 +104,18 @@
   content: url("../img/walking-black-cat.svg");
   left: -10px;
   top: 10px;
+
+  @media (min-width: @tablet-width) {
+    left: -40px;
+    top: 40px;
+    content: url("../img/index/walking-cat-tablet.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -18px;
+    top: 20px;
+    content: url("../img/index/walking-cat-desctop.svg");
+  }
 }
 
 .choice-list__title {
