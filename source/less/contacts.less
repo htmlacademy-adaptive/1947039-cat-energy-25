@@ -9,7 +9,6 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: @padding (@padding+6px);
   background-color: @white-color;
 
@@ -20,6 +19,9 @@
     height: 198px;
     padding: 0;
     z-index: 1;
+    left: 110px;
+    top: 95px;
+    align-items: center;
   }
 }
 
@@ -70,6 +72,8 @@
 }
 
 .contacts__address {
+  vertical-align: top;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 15px;
   }

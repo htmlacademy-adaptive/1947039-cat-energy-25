@@ -16,10 +16,14 @@
     <h1 class="visually-hidden"></h1>
     <div class="main-header__logo-wrapper">
       <a class="main-header__logo">
-        <img src="img/logo.svg" width="33" height="38" alt="Логотип Кэт энерджи»">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/header/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+          <img class="main-header__logo" src="img/header/logo.svg" width="33" height="38" alt="Логотип Кэт энерджи»">
+        </picture>
       </a>
       <a class="main-header__logo-text">
-        <img src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи»">
+        <img src="img/header/logo-text.svg" width="101" height="18" alt="Кэт энерджи»">
       </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
@@ -28,15 +32,15 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="index.html">
+            <a class="site-list__link site-list__link--current site-list__link--color" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link site-list__link--color" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+            <a class="site-list__link site-list__link--color" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -50,7 +54,11 @@
           <h2 class="promo__title">Функциональное <br> питание для котов</h2>
           <p class="promo__description">Занялся собой? Займись котом!</p>
         </div>
-        <img class="promo__image" src="img/index-can-phone%20.png" alt="Баночка с кормом" width="280" height="270">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/index/index-can-desktop.png 1x, img/index/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index/index-can-tablet.png 1x, img/index/index-can-tablet@2x.png 2x">
+          <img class="promo__image" src="img/index/index-can-mobile.png" srcset="img/index/index-can-mobile@2x.png 2x" alt="Баночка с кормом">
+        </picture>
         <a class="promo__link" href="form.html"> Подобрать программу</a>
     </section>
     <section class="option">
@@ -117,7 +125,15 @@
           </div>
         </div>
         <div class="example__range-wrapper">
-          <img class="range__img" src="img/index/fat-cat.png" alt="Толстый котик.">
+          <div class="example__range-wrapper-img">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index/cat-fat-tablet.png, img/index/cat-fat-tablet@2x.png">
+              <img class="range__img-fat-cat" src="img/index/fat-cat.png" srcset="img/index/fat-cat@2x.png 2x" alt="Толстый котик.">
+            </picture>
+          </div>
+          <div class="example__range-wrapper-slim">
+            <img class="range__img-slim-cat" src="img/index/cat-skinny-tablet.png" alt="Худой котик.">
+          </div>
           <div class="range">
             <span class="range__min">Было</span>
             <div class="range__scale">
@@ -138,7 +154,11 @@
               <span>Санкт-Петербург</span>
             </div>
           </div>
-          <img class="contacts__map" src="img/map.jpg" alt="Карта проезда">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/footer/map-desktop.png 1x, img/footer/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/footer/map-tablet.png 1x, img/footer/map-tablet@2x.png 2x">
+            <img class="contacts__map" src="img/footer/map-mobile.jpg" srcset="img/footer/map-mobile@2x.png 2x" alt="Карта проезда">
+          </picture>
         </div>
       <div class="main-footer__social social">
           <img class="social__text-logo" src="img/index/footer-text-logo.svg" alt="Cat energy">

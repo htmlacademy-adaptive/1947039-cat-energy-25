@@ -12,9 +12,35 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
 }
 
 .additional-card__button {
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 30%);
+  }
+
   @media (min-width: @tablet-width) {
     width: 632px;
   }
@@ -22,6 +48,8 @@
   @media (min-width: @desktop-width) {
     width: 244px;
     padding: 7px 26px;
+    min-height: 40px;
+    margin-left: 38px;
   }
 }
 
@@ -38,4 +66,29 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 30%);
+  }
+}
+
+.catalog__button {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/catalog/plus-mobile.svg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border: none;
+  background-color: @white-color;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/catalog/plus-tablet.svg");
+  }
 }
